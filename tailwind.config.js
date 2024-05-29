@@ -11,9 +11,13 @@ module.exports = {
         },
         secondary:"#FF7754",
         gray:"#E6E4E6"
-      }}
-    },
-  },
-  plugins: [],
-}
+      },
+    fontFamily:{
+      dmregular:["DMSans-Regular"],
+      dmmedium:["DMSans-Medium"],
+      dmbold:["DMSans-Bold"]
+    }
+    }
+    },plugins: [],
+  };
 

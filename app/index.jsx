@@ -15,8 +15,8 @@ export default function Page() {
     // </SafeAreaView>
     <SafeAreaView className="h-full">
       <ScrollView contentContainerStyle={{ height: "100%" }}>
-        <View className="h-full flex  bg-gray w-full">
-          <View className="space-y-5 mt-5">
+        <View className="h-full flex  bg-gray w-full ">
+          <View className="space-y-5 mt-3">
             <Image
               resizeMethod="resize"
               source={require("../assets/images/logo.png")}
@@ -30,7 +30,7 @@ export default function Page() {
             />
           </View>
           <View
-            className="p-4 pt-10 rounded-[20px] bg-white shadow-lg h-full "
+            className="p-4 pt-7 rounded-[20px] bg-white shadow-lg h-full "
           >
             <View className='flex justify-between w-full space-y-3'>
             <Text className="font-dmbold text-3xl text-primary ">
@@ -46,7 +46,7 @@ export default function Page() {
               text="Let's get started"
               color="bg-secondary"
               handlePress={()=>{router.push('/SignIn')}}
-              extraStyles={"mt-5"}
+              extraStyles={"mt-3"}
             />
             </View>
             

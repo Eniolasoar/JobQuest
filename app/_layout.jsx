@@ -13,7 +13,10 @@ const _layout = () => {
     })
     useEffect(()=>{
         if(error) console.log('Fonts not loaded')
-        if(fontsLoaded) SplashScreen.hideAsync()
+        if(fontsLoaded) {
+          SplashScreen.hideAsync();
+          console.log('Fonts loaded');
+        }
        
 
     },[fontsLoaded,error])
@@ -25,6 +28,7 @@ const _layout = () => {
       <Stack>
         <Stack.Screen name='index' options={{ headerShown: false }} />
         <Stack.Screen name='(auth)' options={{ headerShown: false }} />
+        <Stack.Screen name='(tabs)' options={{ headerShown: false }} />
       </Stack>
 
   )
